@@ -7,71 +7,87 @@
   <style>
     body {
       margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #e9ecef;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+      margin: auto;
+      padding: 25px;
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      border-radius: 12px;
+      box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
     }
 
     h1 {
       text-align: center;
-      font-size: 1.8em;
+      font-size: 2em;
       margin-bottom: 20px;
-      color: #555;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .control-group {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 15px;
-      padding: 10px;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      background-color: #f7f7f7;
       border: 1px solid #ddd;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+      box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), inset -3px -3px 6px rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease;
     }
 
     .control-group:hover {
-      background: #f9f9f9;
+      background: #eaeaea;
+      border-color: #ccc;
     }
 
     label {
-      font-size: 1em;
-      color: #444;
+      font-size: 1.1em;
+      color: #555;
       cursor: pointer;
-      margin-right: 10px;
       flex: 1;
     }
 
     input[type="checkbox"] {
-      transform: scale(1.2);
+      transform: scale(1.5);
       cursor: pointer;
+      accent-color: #007bff;
     }
 
     .footer {
       text-align: center;
       margin-top: 20px;
       font-size: 0.9em;
-      color: #888;
+      color: #666;
     }
 
     .footer a {
-      color: #555;
+      color: #007bff;
       text-decoration: none;
       font-weight: bold;
     }
 
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    .footer span {
+      font-size: 1em;
+      color: #333;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -90,7 +106,7 @@
     </div>
 
     <div class="footer">
-      Made with ❤️ for a better YouTube experience. <br>
+      <span>Made with ❤️ for a better YouTube experience.</span> <br>
       <a href="https://www.youtube.com/" target="_blank">Go to YouTube</a>
     </div>
   </div>
