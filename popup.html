@@ -36,6 +36,13 @@
       letter-spacing: 1px;
     }
 
+    .youtube-icon {
+      display: block;
+      margin: 0 auto 20px; /* Centers the icon and adds margin below */
+      width: 50px; /* Adjust the size of the YouTube icon */
+      height: 50px;
+    }
+
     .control-group {
       display: flex;
       align-items: center;
@@ -54,11 +61,12 @@
       border-color: #ccc;
     }
 
-    label {
+    .control-group label {
       font-size: 1.1em;
       color: #555;
       cursor: pointer;
       flex: 1;
+      margin-right: 10px; /* Added margin-right to add space between label and checkbox */
     }
 
     input[type="checkbox"] {
@@ -93,15 +101,18 @@
 </head>
 <body>
   <div class="container">
+    <!-- YouTube Icon at the top -->
+    <img src="icons/youtube.png" alt="YouTube Icon" class="youtube-icon">
+
     <h1>YouTube Control</h1>
 
     <div class="control-group">
-      <label for="togglePlayPause">Play/Pause on Tab/Window Switch</label>
+      <label for="togglePlayPause">Play/Pause</label>
       <input type="checkbox" id="togglePlayPause">
     </div>
 
     <div class="control-group">
-      <label for="toggleAdBlock">Enable Ad Blocking</label>
+      <label for="toggleAdBlock">E/B Ad</label>
       <input type="checkbox" id="toggleAdBlock">
     </div>
 
