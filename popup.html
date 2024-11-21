@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character encoding and responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title -->
   <title>YouTube Control</title>
+
+  <!-- Internal CSS for styling the page -->
   <style>
+    /* General body styling */
     body {
       margin: 0;
       padding: 0;
@@ -14,9 +20,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height: 100vh; /* Full viewport height */
     }
 
+    /* Main container styling */
     .container {
       width: 100%;
       max-width: 420px;
@@ -27,6 +34,7 @@
       box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
     }
 
+    /* Header styling */
     h1 {
       text-align: center;
       font-size: 2em;
@@ -36,6 +44,7 @@
       letter-spacing: 1px;
     }
 
+    /* Styling for the YouTube icon */
     .youtube-icon {
       display: block;
       margin: 0 auto 20px; /* Centers the icon and adds margin below */
@@ -43,6 +52,7 @@
       height: 50px;
     }
 
+    /* Control group styling */
     .control-group {
       display: flex;
       align-items: center;
@@ -53,28 +63,32 @@
       background-color: #f7f7f7;
       border: 1px solid #ddd;
       box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), inset -3px -3px 6px rgba(255, 255, 255, 0.5);
-      transition: all 0.3s ease;
+      transition: all 0.3s ease; /* Smooth hover effect */
     }
 
+    /* Hover effect for control group */
     .control-group:hover {
       background: #eaeaea;
       border-color: #ccc;
     }
 
+    /* Label styling */
     .control-group label {
       font-size: 1.1em;
       color: #555;
       cursor: pointer;
       flex: 1;
-      margin-right: 10px; /* Added margin-right to add space between label and checkbox */
+      margin-right: 10px; /* Adds space between label and checkbox */
     }
 
+    /* Checkbox styling */
     input[type="checkbox"] {
-      transform: scale(1.5);
+      transform: scale(1.5); /* Increases the size of the checkbox */
       cursor: pointer;
-      accent-color: #007bff;
+      accent-color: #007bff; /* Sets the color of the checkbox */
     }
 
+    /* Footer styling */
     .footer {
       text-align: center;
       margin-top: 20px;
@@ -82,16 +96,19 @@
       color: #666;
     }
 
+    /* Link styling in the footer */
     .footer a {
       color: #007bff;
       text-decoration: none;
       font-weight: bold;
     }
 
+    /* Hover effect for links */
     .footer a:hover {
       text-decoration: underline;
     }
 
+    /* Footer text styling */
     .footer span {
       font-size: 1em;
       color: #333;
@@ -100,28 +117,34 @@
   </style>
 </head>
 <body>
+  <!-- Main container for the content -->
   <div class="container">
     <!-- YouTube Icon at the top -->
     <img src="icons/youtube.png" alt="YouTube Icon" class="youtube-icon">
 
+    <!-- Page header -->
     <h1>YouTube Control</h1>
 
+    <!-- Control group for Play/Pause toggle -->
     <div class="control-group">
       <label for="togglePlayPause">Play/Pause</label>
       <input type="checkbox" id="togglePlayPause">
     </div>
 
-    <div class="control-group">
+    <!-- Additional control group commented out (for future use) -->
+    <!-- <div class="control-group">
       <label for="toggleAdBlock">E/B Ad</label>
       <input type="checkbox" id="toggleAdBlock">
-    </div>
+    </div> -->
 
+    <!-- Footer with a message and link to YouTube -->
     <div class="footer">
       <span>Made with ❤️ for a better YouTube experience.</span> <br>
       <a href="https://www.youtube.com/" target="_blank">Go to YouTube</a>
     </div>
   </div>
 
+  <!-- External JavaScript file for functionality -->
   <script src="popup.js"></script>
 </body>
 </html>
